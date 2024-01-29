@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@400;700&display=swap');
+body {
+    background-color: #eaeded;
+    margin: 0;
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 0.9em;
+}
+header {
+    background-color: #222f3e;
+}
+.logoimg {
+    width: 100px;
+    padding-left: 1.8em;
+    display: block;
+}
+.elenco-barra {
+    list-style-type: none;
+    margin-left: 0px;
+    background-color: #354758;
+    color: white;
+    padding: 0.3em 1.5em;
+}
+.elenco-barra li {
+    display: inline;
+    padding: 10px;
+}
+
+main {
+    margin: 1.7em;
+}
+span{
+    text-align: center;
+    color: white;
+    background-color:#f56600 ;
+    margin-bottom: 1.7em;
+    display: block;
+    padding: 0.3em;
+}
+#giftbanner {
+    background-image: url(assets/bg-image.png);
+    background-size: 92% 65%;
+    height: 195px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.scritte {
+    position: absolute;
+    top: 45px;
+    right: 480px;
+}
+
+#gruppo {
+    background-color: #ffffff;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+}
+h3 {
+    padding: 0;
+    margin: 0.5em 0.8em;
+}
+
+
+.link1{
+    font-size: small;
+    padding-left: 1em;
+    color: #007084;
+    text-decoration: none;
+
+
+}
+.foto {
+    margin: 0.75em;
+    width: 271px;
+    height: 350px;
+    border-radius: 30px;
+    box-shadow:10px 10px rgb(250, 250, 250)
+    
+}
+.fotolunghe {
+    width: 100%;
+    margin-top: 1em;
+}
+.ricercaspecifica  {
+    text-align: center;
+    margin-top: 0;
+}
+
+.linkrichiamo {
+    text-align: center;
+    padding: 1em;
+    background-color: #354758;
+
+}
+
+.finale {
+    background-color: #222f3e;
+    padding: 6em;
+    position: relative;
+
+}
+
+.logoimg1 {
+    width: 150px ;
+    position: absolute;
+    top: 50px;
+    right: 550px;
+}
+.link2 {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
