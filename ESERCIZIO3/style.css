@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap');
+body {
+    box-sizing: border-box;
+    background-color: #00968854;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenitore {
+    width: 250px;
+    height: 350px;
+    background-image: url(cocktail.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+/*Non sono riuscito a semplificare questa parte*/
+.contenitore:hover .dots,
+.contenitore:hover .info,
+.contenitore:hover .upload {
+    top: 88%;
+    cursor: pointer;
+}
+
+/*Qui esco un po' fuori tema ma volevo vedere la gestione grafica del button*/
+button {
+    background-color: red;
+    border-radius: 40px;
+    width: 70px;
+    height: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.contenitore:hover button {
+    top:0;
+    cursor: pointer;
+}
+
+
+/*Avevo notato che stavo scrivendo molte funzioni uguali su tutti i box che avevo creato, quindi ho creato un gruppo*/
+.info, .upload, .dots {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 35px;
+    position: absolute;
+    top: 100%;
+    transition: 0.2s ease-in-out;
+    opacity: 0.5;
+}
+
+.info {
+    width: 150px;
+    left: 3%;
+}
+
+.upload {
+    width: 35px;
+    left: 66%;
+}
+
+.dots {
+    width: 35px;
+    left: 82%;
+}
+
+/*Style del piccolo paragrafo*/
+.info p {
+    margin: 9.5px 0 9.5px 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 900;
+    font-size: 13px;
+    user-select: none; /*L'ho utilizzato per fare pratica*/
+}
+
+/*style di tutte le icone che ho utilizzato*/
+i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*sposto a mio piacimento solo l'icona del div info*/
+.info i {
+    left: 8%;
+}
+
+/*So che esistono modi più semplici (tipo opacity) ma volevo fare un po' di pratica*/
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    background: transparent ;
+}
+
+.contenitore:hover .overlay {
+background: linear-gradient(0, black, transparent);
+}
+
+div:hover {
+    opacity: 1;
+}
