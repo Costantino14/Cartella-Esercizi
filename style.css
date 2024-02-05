@@ -1,0 +1,250 @@
+body {
+font-size: small;
+margin: 0;
+padding: 0;
+background-color: #ffff;
+box-sizing: border-box;
+}
+
+/*GRUPPO HEADER*/
+header {
+    height: 50px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    box-shadow:0 0 10px 1px rgb(225, 224, 224) ;
+}
+
+.right-header {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.logo {
+    width: 130px;
+    height: 32.26px;
+}
+
+.standard-button {
+    display: flex;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.iniziale {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/*GRUPPO MAIN*/
+main { 
+    padding: 0 100px;
+    display: flex;
+}
+
+/*Sezione a sinista*/
+.section-left {
+    height: 100%;
+    width: 70%;
+    padding-left: 10px ;
+    border-right: 1px solid black ;
+}
+
+/*Impostazioni barra*/
+.bar-selection {                    
+    display: flex;
+    border-bottom: 1px solid grey;
+    color: grey;
+    gap: 20px;
+    padding: 50px 0 0 5px;
+    margin-right: 50px ;
+    font-size: 10px;
+}
+
+.recommended {                              
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    padding-bottom: 8px;
+    color: black;
+}
+
+/*INIZIO impostazioni degli articoli, pure quelli della barra di destra*/
+.link-articolo {                        /*Formatazione dei link*/
+    text-decoration: none;
+    color: black;
+}
+
+.articolo {                             /*Contenitore degli articoli*/                       
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px ;
+    margin-top: 40px;
+}
+
+.contenuto {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 5px;
+    margin: 0 30px 20px 0; 
+}
+
+.header-articolo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8em;
+}
+
+.icona-profilo {                    /*Ho voluto personalizzare tutte le icone dei profili*/
+    width: 15px;
+    height: 15px;
+}
+
+.button-articolo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1px;
+}
+
+.mini-icone{
+    display: flex;
+    gap: 15px;
+}
+
+.riga{
+    display: flex;
+    max-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: baseline;
+}
+
+.riga, .titolo-articolo{
+    margin:2px; 
+}
+
+.tags {                             /*Impostazioni di tutti i tags della pagina*/ 
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+}
+
+.immagine-articolo {                /*Ho voluto personalizare ogni foto articolo*/
+    width: 150px;
+    height: 100px;    
+}
+
+/*INIZIO SEZIONE DI DESTRA*/
+.section-right {
+    margin-left: 50px;
+    width: 30%;
+}
+
+/*Inizo Gruppo del BOX SOCIAL*/
+.box-social {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    gap: 10px;
+}
+
+.medium-twitter {
+    display: flex;
+    align-items: center;
+}
+
+.box-social .standard-button {
+    padding: 0 40px 0 5px;
+    margin-bottom: 10px;
+}
+
+.box-social a {                     /*Modifica solo il link del box social*/
+    color: gray;
+}
+
+.logo-piccolo {
+    width: 40px;
+}
+
+/*Inizio Box dei tags*/
+.tags-list {                        
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags-list .tags {                   /*Modifiche dei tags per ricreare effetto visivo*/       
+    padding: 7.5px 15px;
+    border-radius: 20px;
+    margin: 3px;
+}
+
+/*Inizio Box dei Follow*/
+.profilo-esterno {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.foto-dettagli {                            /*contenitore per gestire la grafica*/
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.follow {
+    border-radius: 15px;
+    height: 30px;
+}
+
+.foto-profilo-twitter {             
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;    
+}
+
+.dettagli p {
+    font-size: 12px;
+    margin: 0;
+    padding-top: 4px;
+}
+
+/*Inizio Box Recently*/
+.box-recently .contenuto{               /*Modifiche a "contenuto" solo per questo box*/
+    width: 100%;
+}
+
+.box-recently, .box-tags{
+    margin: 50px 0;
+}
+
+.link {
+    color: rgb(12 134 12);
+    text-decoration: none;
+}
+
+/*Ultima parte*/
+.botton-right {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px 25px;
+    padding: 0;
+}
