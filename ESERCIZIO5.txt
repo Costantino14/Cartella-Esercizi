@@ -1,0 +1,6 @@
+Un algoritmo è una serie di comandi, passi o istruzioni che servono per risolvere un problema e raggiungere un determinato obbiettivo. 
+Si può dire che in un manuale di istruzioni dove l'obbietivo è costruire un oggetto, le istruzioni passo dopo passo sono l'algoritmo.
+
+Le variabili si possono paragonare a dei contenitori, nei quali si possono immagazzinare un qualsiasi tipo di dato o informazione, come per esempio numeri, stringhe e tanto altro.
+
+Il dato Undefined e quello Null si differenziano tra loro perchè il primo avviene quanto dicchiariamo una variabile ma non assegnamo alcun dato. Quindi il contenitore non solo è vuoto, ma non è stato mai assegnato, quindi è "vergine". Mentre Null è una variabile che viene assegnata appositamente e quindi siamo noi a dichiararla esplicitamente come vuota. 
