@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    max-width: 480px;       /*formato per smartphone*/
+    background-color: aquamarine;
+    font-size: 0.8em;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+}
+
+.immagine {
+    height: 100px;
+    width: 100px;
+    margin-top: 15px;
+    border: 2px solid black;
+}
+
+/*Impostazione per esercizio 11*/
+.visibile {
+   display: none;
+}
+
+table h3 {
+    width: 80px;
+}
+
+table {
+    display: flex;
+}
+
+.contenitore {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 480px;
+    gap:5px;
+    padding-right: 5px;
+}
+
+.descrizione {
+    width: 200px;
+    text-align: center;
+}
+
+/*Mi serve per verificare il funzionamento dell'esercizio 10*/
+.noLine {
+    text-decoration: none;
+}
+
+.prezzo {
+    font-size:bolder;
+}
+footer {
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+}
+
