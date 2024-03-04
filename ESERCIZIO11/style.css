@@ -1,0 +1,132 @@
+body {
+    background-color: #edf3f4;
+}
+
+#firstSection {
+    position: relative; 
+}
+
+#window {  /*finestrella che compare e scompare quando si clicca sul bottone Account*/
+    width: 110px; 
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative; /*posizionamento*/
+    left: 99.5%; /*posizionamento*/
+    transition: 0.2s ease-in-out; /*transizione di entrata e uscita*/
+    display: none; /*lo imposto su none e poi con una funzione toggle lo cambio in block*/
+
+}
+
+.windowContent {
+    margin: 8px;
+    padding: 2px;
+    cursor: pointer; /*cambio il cursore in pointer per tutti i pulsanti*/
+}
+
+.windowContent:hover { /*cambio il colore dello sfondo ogni volta che metto il cursore sopra*/
+    background-color: hwb(0 50% 50%); 
+}
+
+
+nav {  /*topBar*/
+    height: 50px ;
+    display: flex; /*FlexBox per gestire meglio le posizione degli elementi*/
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 100px;
+    box-shadow: 5px 0 20px 10px rgb(225, 224, 224) ; /*piccolo effetto tridimensionale*/
+    position: sticky; 
+    background-color: white;
+}
+
+.right-nav{
+    display: flex; /*FlexBox per gestire meglio le posizione degli elementi*/
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.fa-bell {
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;  /*cambio il cursore in pointer*/
+}
+
+.account {
+    height: 30px;
+    width: 80px;
+    padding-top: 7.5px;
+    background-color: #d99544;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer; /*cambio il cursore in pointer*/
+}
+
+#sectionSearch {
+    /*Imposto una immagine di sfondo con dimenzioni e posizione fissa*/
+    background-image: url(https://jobs.vettimes.co.uk/getasset/1e3453bb-b7d4-4d06-8c5c-d6e05a485568/);
+    width: 70%;
+    height: 400px;
+    background-size: 100% 100%; /*Adatto l'immagine alle dimensioni del div*/
+    position: relative; /*posizionamento*/
+    left: 50%;  /*posizionamento*/
+    transform: translate(-50%, 0);
+}
+
+h1 {
+    color: #d99544;  
+    text-shadow:   1px  1px #0000005c; 
+}
+
+#form {  /*Impostazioni per il posizionamento dei campi input e bottoni search e reset*/
+    position: absolute; 
+    top:70%; 
+    left: 50%;
+    transform: translate(-30%,-50%);
+
+}
+
+#job , #nation {  /*Impostazioni estetiche per i campi input*/
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#submit , #reset { /*Impostazioni estetiche per i bottoni search e reset*/
+    width: 100px;
+    height: 30px;
+}
+
+h3 {
+    margin: 0;
+}
+
+#popularSearch {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.box, .box1 {  /*design dei bottoni per la ricerca rapida*/
+    width: 100px;
+    padding: 10px;
+    background-color: #d99544;  /*colore sfondo*/
+    border: 1px solid black;  /*bordo*/
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;  /*cambio il cursore in pointer*/
+}
+
+.box1 {  /*Cambio le dimensioni per il box1*/
+    width: 50px;
+}
+
+footer {  /*Qualche impostazione estetica per i dati raccolti*/
+    background-color: white;
+    width: 600px;
+    margin-left: 30%;
+}
+

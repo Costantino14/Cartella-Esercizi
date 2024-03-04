@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <header id="firstSection">
+
+        <!--definisco una barra-->
+        <nav>
+            <h1>LET'S FIND A GREAT JOB!</h1>
+            <div class="right-nav">
+                <i class="fa-regular fa-bell cursore gray" onclick="notification()"></i>  <!--Campanella delle notifiche che diventa gialla se cliccata-->
+                <div class="account" onclick="toggleWindow()">Account</div> <!--Bottone che fa comparire un piccola finestrella-->
+            </div>
+        </nav>
+
+        <!--Sezione principale con immagine e il form-->
+        <section  id="sectionSearch">
+
+            <!--Definisco il form usando i label e due input text-->
+            <form id="form">
+                <label for="job"></label> <!--Non definisco i label per una questione estetica-->
+                <label for="nation"></label> 
+                <br>
+                <input id="job" type="text" placeholder="Which Job..." required> <!--required identifica che il campo è obbligatorio per inviare il form-->
+                <input id="nation" type="text" placeholder="Nation..." required>      
+                <br><br>
+                
+                <!--Bottoni per far partire la ricerca e per resettarla-->
+                <input id="submit" type="button" value="SEARCH">
+                <input id="reset" type="reset" value="RESET" onclick="pReset()">
+            </form>
+
+        <!--piccola finestrella che parte quando fai click sull'Account-->            
+        <div id="window">
+            <div class="windowContent"><i class="fa-regular fa-user"></i> LogIn/Out</div>
+            <div class="windowContent"><i class="fa-regular fa-file"></i> Curriculum</div>
+            <div class="windowContent"><i class="fa-solid fa-sliders"></i> Setting</div>
+        </div>
+        </section>
+    </header>
+
+
+    <section>
+        <h3>Popular Search:</h3>
+
+        <!--Ho vololuto creare dei pulsanti rapidi per agevolare la ricerca, che
+        grazie a onclick richiamo le funzioni che mi permetteranno di inserire un testo
+        direttamente nel relativo input text-->
+        <div id="popularSearch">
+            <div class="box" onclick="insertJob('Marketing')"> <!--insertJob() mi inserisce il testo dentro all'input text "lavoro"-->
+                <i class="fa-solid fa-magnifying-glass"></i> Marketing
+            </div>
+            <div class="box" onclick="insertJob('Designer')">
+                <i class="fa-solid fa-magnifying-glass"></i> Designer
+            </div>
+            <div class="box" onclick="insertJob('Developer')">
+                <i class="fa-solid fa-magnifying-glass"></i> Developer
+            </div>
+            <div class="box" onclick="insertJob('Service')">
+                <i class="fa-solid fa-magnifying-glass"></i> Service
+            </div>
+            <div class="box" onclick="insertJob('Specialist')">
+                <i class="fa-solid fa-magnifying-glass"></i> Specialist
+            </div>
+            <div class="box1" onclick="insertLocation('US')"> <!--insertLocation() mi inserisce il testo dentro all'input text "nazione"-->
+                <i class="fa-solid fa-location-dot"></i> US
+            </div>
+            <div class="box1" onclick="insertLocation('CA')">
+                <i class="fa-solid fa-location-dot"></i> CA
+            </div>
+            <div class="box1" onclick="insertLocation('NZ')">
+                <i class="fa-solid fa-location-dot"></i> NZ
+            </div>
+            <div class="box1" onclick="insertLocation('GB')">
+                <i class="fa-solid fa-location-dot"></i> GB
+            </div>
+            <div class="box1" onclick="insertLocation('NY')">
+                <i class="fa-solid fa-location-dot"></i> NY
+            </div>
+        </div>
+    </section>
+
+    <!--Qui vado ad inserire i risultati usando una semplice ma efficace lista punteggiata-->
+    <footer>
+        <div id="numeroRisultati"></div>
+        <ul id="tabella"></ul>
+    </footer>
+
+<script src="https://kit.fontawesome.com/eefe67ed94.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
